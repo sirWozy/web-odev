@@ -1,0 +1,50 @@
+.showcase{
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  color: var(--dark-text-color);
+  @include mq("tablet"){
+    flex-direction: column;
+    justify-content: center;
+    gap: 120px;
+    height: auto;
+    padding: 100px 0;
+  }
+  &-item{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    &--image{
+      background-color: var(--light-hover-text-color);
+      width: 300px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    &--header, &--body, &--footer{
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+    }
+    &--header{
+      font-size: 40px;
+      h2{
+        font-weight: 300;
+        color: var(--primary-color);
+        b{
+          font-weight: 500;
+          color: var(--dark-text-color);
+        }
+      }
+    }
+    &--body{
+      font-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+// font import
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+// helpers
+@import './helper/mixin';
+@import './helper/formalize';
+@import './helper/normalize';
+
+// globals
+@import './global/var';
+@import './global/header';
+@import './global/button';
+@import './global/footer';
+
+
+// sections
+@import './sections/showcase';
+@import './sections/about';
+@import './sections/portfolio';
+@import './sections/contact';
+
+//pages
+@import './pages/portfolio-content';
+
+
+
+
+// global font 
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.showcase, .about, .portfolio, .contact{
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq("tablet"){
+    width: 100%;
+  }
+}
+
+.section-title{
+  font-size: 48px;
+  position: relative;
+  z-index: 1;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 40px;
+    background-color: var(--primary-hover-color);
+    z-index: -1;
+  }
+}
+

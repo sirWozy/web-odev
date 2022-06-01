@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/css/main.min.css">
+  <title>Eray Şen | Portfolyo</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="" id="navbar-toggler-open" class="navbar-toggler-open">
+        <img src="images/nav_icon.svg" width="40" height="40">
+      </a>
+      <ul class="navbar">
+        <li class="navbar-item">
+          <a href="" class="navbar-item--link navbar-toggler-close">
+            <img src="images/close_icon.svg" width="40" height="40">
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#showcase" class="navbar-item--link">Anasayfa</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#about" class="navbar-item--link">Hakkımda</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#portfolio" class="navbar-item--link">Portfolyo</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#contact" class="navbar-item--link">İletişim</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container showcase-container">
+      <section class="showcase" id="showcase">
+        <div class="showcase-item">
+          <div class="showcase-item--image">
+            <img src="images/profilePictures.png" alt="Personal Picture">
+          </div>
+        </div>
+        <div class="showcase-item">
+          <div class="showcase-item--header">
+            <h2>Merhaba! <b>Ben Eray.</b></h2>
+          </div>
+          <div class="showcase-item--body">
+            <h3>Jr. Web Developer'ım</h3>
+          </div>
+          <div class="showcase-item--footer">
+            <a class="button" href="#about">Hakkımda</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container about-container">
+      <section class="about" id="about">
+        <h2 class="about-title section-title">Hakkımda</h2>
+        <p class="about-desc">Merhaba Ben Eray. 1999 yılında İstanbul'da doğdum. İlkokulu Hadımköy Örfi Çetinkaya İÖO'da okudum. 
+          Liseyi Borusan Asım Kocabıyık Mesleki Teknik Anadolu Lisesi'nde Bilişim Meslek bölümünde Web Tasarım
+          Alanında bitirdim. Daha ilk olarak Bursa Uludağ Üniversitesi Bilgisayar Programcılığını bitirdim. Sonrasında 
+        DGS ile Beykent Üniversitesi Yönetim Bilişim Sistemleri bölümüne tam burslu olarak geçiş yaptım ve halen okuluma devam etmekteyim</p>
+      </section>
+    </div>
+    <div class="container portfolio-container">
+      <section class="portfolio" id="portfolio">
+        <h2 class="portfolio-title section-title">
+          Portfolyo
+        </h2>
+        <div class="portfolio-article">
+          <div class="portfolio-article-item">
+            <div class="portfolio-article-item--header">
+              <img src="images/landify-cover.png" alt="landify cover">
+            </div>
+            <div class="portfolio-article-item--body">
+              <h3>Landify Landing Page</h3>
+              <p>HTML - SCSS - JS</p>
+            </div>
+            <div class="portfolio-article-item--footer">
+              <a class="button" href="porfolio-contents-landify.html">Daha Fazla</a>
+            </div>
+          </div>
+          <div class="portfolio-article-item">
+            <div class="portfolio-article-item--header">
+              <img src="images/piraye-cover.png" alt="piraye cover">
+            </div>
+            <div class="portfolio-article-item--body">
+              <h3>Piraye Web Sitesi</h3>
+              <p>HTML - CSS - JS - PHP</p>
+            </div>
+            <div class="portfolio-article-item--footer">
+              <a class="button" href="porfolio-contents-piraye.html">Daha Fazla</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    </div>
+    <div class="container contact-container">
+      <section class="contact" id="contact">
+        <h2 class="contact-title section-title">İletişim</h2>
+        <div class="contact-article">
+          <form action="">
+            <div class="form-group">
+              <label class="form-group-label" for="name">Adınız:</label>
+              <input class="form-group-input" type="text" name="name">
+            </div>
+            <div class="form-group">
+              <label class="form-group-label" for="surname">Soyadınız:</label>
+              <input class="form-group-input" type="text" name="surname">
+            </div>
+            <div class="form-group">
+              <label class="form-group-label" for="message">Mesajınız:</label>
+              <textarea class="form-group-input" name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+            <button class="button">Gönder</button>
+          </form> 
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    eraysen.com © 2022
+  </footer>
+</body>
+<script src="dist/js/app.js"></script>
+</html>
